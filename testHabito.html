@@ -1,29 +1,167 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="FormCss.css">
-</head>
-<body>
-        <header>
-        <div class="logo">
-            <img src="Logo.png" alt="">
-        </div>
-        <div class="Titulo">
-            <h1>Guia do Estudante Leve</h1>
-        </div>
-        <div class="Menu">
-            <nav>
-                <a href="">Início</a>
-                <a href="">Dicas</a>
-                <a href="">Teste de Hábitos</a>
-            </nav>
-        </div>
-        <div class="Tema">
-            <button><img src="ModoClaro.png" alt=""></button>
+    <link rel="stylesheet" href="Cores.css" />
+    <link rel="stylesheet" href="FormCss.css" />
+    <script src="HeaderMain.js" defer></script>
+    <script src="mainForm.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="Logo.png" alt="" />
+      </div>
+      <div class="Titulo">
+        <h1>Guia do Estudante Leve</h1>
+      </div>
+      <div class="Menu">
+        <nav>
+          <a href="index.html">Início</a>
+          <a href="">Dicas</a>
+          <a href="">Teste de Hábitos</a>
+        </nav>
+      </div>
+     <div class="Tema">
+            <button id="temaBt"><img src="ModoClaro.png" alt=""></button>
         </div>
     </header>
-</body>
+    <main>
+      <section class="TestHabitoSec">
+        <form class="TestHabito" id="TestHabito">
+          <h2 class="form-titulo">Formulario do bem-estar</h2>
+
+          <div class="pergunta-grupo">
+            <label class="pergunta-label"
+              >Você dorme pelo menos 7 horas por noite?</label
+            >
+            <div class="linha-opcoes">
+              <div class="opaco-pergunta">
+                <input
+                  type="radio"
+                  name="Dormir"
+                  id="dormirSim"
+                  value="sim"
+                  class="opcao-input"
+                  required
+                />
+                <label for="dormirSim" class="opcao-label">Sim</label>
+              </div>
+              <div class="opaco-pergunta">
+                <input
+                  type="radio"
+                  name="Dormir"
+                  id="dormirNao"
+                  value="nao"
+                  class="opcao-input"
+                  required
+                />
+                <label for="dormirNao" class="opcao-label">Não</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="pergunta-grupo">
+            <label class="pergunta-label"
+              >Você faz pausas durante os estudos?</label
+            >
+            <div class="linha-opcoes">
+              <div class="opaco-pergunta">
+                <input
+                  type="radio"
+                  name="Estudo"
+                  id="estudoSim"
+                  value="sim"
+                  class="opcao-input"
+                  required
+                />
+                <label for="estudoSim" class="opcao-label">Sim</label>
+              </div>
+              <div class="opaco-pergunta">
+                <input
+                  type="radio"
+                  name="Estudo"
+                  id="estudoNao"
+                  value="nao"
+                  class="opcao-input"
+                  required
+                />
+                <label for="estudoNao" class="opcao-label">Não</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="pergunta-grupo">
+            <label class="pergunta-label"
+              >Você faz alguma atividade física (ex: Caminha, academia, futebol,
+              etc)?</label
+            >
+            <div class="linha-opcoes">
+              <div class="opaco-pergunta">
+                <input
+                  type="radio"
+                  name="atividade"
+                  id="atividadeSim"
+                  value="sim"
+                  class="opcao-input"
+                  required
+                />
+                <label for="atividadeSim" class="opcao-label">Sim</label>
+              </div>
+              <div class="opaco-pergunta">
+                <input
+                  type="radio"
+                  name="atividade"
+                  id="atividadeNao"
+                  value="nao"
+                  class="opcao-input"
+                  required
+                />
+                <label for="atividadeNao" class="opcao-label">Não</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="pergunta-grupo">
+            <label class="pergunta-label"
+              >Antes de dormir você usa o celular?</label
+            >
+            <div class="linha-opcoes">
+              <div class="opaco-pergunta">
+                <input
+                  type="radio"
+                  name="celularDormir"
+                  id="celularSim"
+                  value="sim"
+                  class="opcao-input"
+                  required
+                />
+                <label for="celularSim" class="opcao-label">Sim</label>
+              </div>
+              <div class="opaco-pergunta">
+                <input
+                  type="radio"
+                  name="celularDormir"
+                  id="celularNao"
+                  value="nao"
+                  class="opcao-input"
+                  required
+                />
+                <label for="celularNao" class="opcao-label">Não</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="BtForm">
+            <button type="submit" class="btn-enviar">Enviar</button>
+          </div>
+          <div class="Resultado">
+            <p id="Resultado"></p>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

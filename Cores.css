@@ -1,62 +1,63 @@
 /* ===================================================
-   TEMA CLARO (Padrão)
+   TEMA CLARO (Padrão) - Estilo Moderno e Limpo
    =================================================== */
 :root {
   /* Cores de Marca / Ação */
-  --primary: #10b981;          /* Verde Esmeralda: Vitalidade e bem-estar */
-  --primary-hover: #059669;    
-  --secondary: #3b82f6;        /* Azul Foco: Estudos e concentração */
-  --secondary-hover: #2563eb;  
-  --accent: #f59e0b;           /* Laranja/Âmbar: Energia e destaques */
+  --primary: #059669;          /* Esmeralda profundo para foco */
+  --primary-hover: #047857;    
+  --secondary: #2563eb;        /* Azul técnico */
+  --secondary-hover: #1d4ed8;  
+  --accent: #d97706;           /* Âmbar de destaque */
 
   /* Superfícies e Fundos */
-  --bg-main: #f8fafc;          /* Fundo suave para não cansar a vista */
-  --bg-card: #ffffff;          /* Fundo de cards e contêineres */
-  --bg-cardTraparent: rgba(255, 255, 255, 0.6);
-  --bg-muted: #f1f5f9;         /* Fundo secundário / formulários */
+  --bg-main: #f1f5f9;          /* Fundo cinza claro suave */
+  --bg-card: #ffffff;          /* Fundo dos cards sólido */
+  --bg-cardTransparent: rgba(255, 255, 255, 0.75);
+  --bg-muted: #e2e8f0;         /* Inputs e áreas secundárias */
 
   /* Tipografia */
-  --text-main: #0f172a;        /* Texto principal (alto contraste) */
-  --text-muted: #64748b;       /* Subtítulos e legendas */
-  --text-inverse: #ffffff;     /* Texto sobre fundos escuros */
+  --text-main: #090d16;        /* Preto quase absoluto para alto contraste */
+  --text-muted: #475569;       /* Cinza intermediário para legendas */
+  --text-inverse: #ffffff;     /* Texto claro para botões */
 
   /* Bordas e Elementos */
-  --border-color: #e2e8f0;     /* Linhas e bordas sutis */
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  --border-color: #cbd5e1;     /* Bordas bem definidas */
+  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.08);
+
+  /* Status */
+  --status-success: #16a34a;
+  --status-warning: #d97706;
+  --status-danger: #dc2626;
+}
+
+/* ===================================================
+   TEMA ESCURO (Dark Mode Customizado) - Totalmente na sua vibe
+   =================================================== */
+[data-theme="dark"] {
+  /* Cores de Marca (Vibrantes e de alto destaque no escuro) */
+  --primary: #10b981;          /* Verde Esmeralda vivo */
+  --primary-hover: #34d399;    
+  --secondary: #3b82f6;        /* Azul brilhante */
+  --secondary-hover: #60a5fa;  
+  --accent: #f59e0b;           /* Laranja âmbar vivo */
+
+  /* Superfícies e Fundos (Tons de preto/grafite profundo) */
+  --bg-main: #090d16;          /* Fundo escuro estilo IDE / ambiente imersivo */
+  --bg-card: #111827;          /* Cards em cinza grafite escuro */
+  --bg-cardTransparent: rgba(17, 24, 39, 0.8);
+  --bg-muted: #1f2937;         /* Fundo de inputs e elementos secundários */
+
+  /* Tipografia */
+  --text-main: #f3f4f6;        /* Branco suave para evitar fadiga visual */
+  --text-muted: #9ca3af;       /* Cinza claro para textos secundários */
+  --text-inverse: #090d16;     /* Texto escuro para elementos de contraste */
+
+  /* Bordas e Elementos */
+  --border-color: #374151;     /* Bordas discretas em tom escuro */
+  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.5);
 
   /* Status */
   --status-success: #22c55e;
   --status-warning: #f59e0b;
   --status-danger: #ef4444;
-}
-
-/* ===================================================
-   TEMA ESCURO (Ativado por classe ou atributo)
-   =================================================== */
-[data-theme="dark"] {
-  /* Cores de Marca (Ajustadas para maior legibilidade no escuro) */
-  --primary: #34d399;          /* Verde mais claro e vibrante */
-  --primary-hover: #10b981;    
-  --secondary: #60a5fa;        /* Azul suavizado */
-  --secondary-hover: #3b82f6;  
-  --accent: #fbbf24;           
-
-  /* Superfícies e Fundos */
-  --bg-main: #0f172a;          /* Azul-noturno profundo */
-  --bg-card: #1e293b;          /* Fundo de cards levemente mais claro */
-  --bg-muted: #334155;         /* Fundo de destaques e inputs */
-
-  /* Tipografia */
-  --text-main: #f8fafc;        /* Texto claro */
-  --text-muted: #94a3b8;       /* Texto secundário em tom médio */
-  --text-inverse: #0f172a;     /* Texto para botões com fundo claro */
-
-  /* Bordas e Elementos */
-  --border-color: #334155;     /* Bordas em tom escuro */
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-
-  /* Status */
-  --status-success: #4ade80;
-  --status-warning: #facc15;
-  --status-danger: #f87171;
 }
